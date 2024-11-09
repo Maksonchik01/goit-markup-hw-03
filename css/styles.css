@@ -7,6 +7,9 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+:root {
+  --cornflower: #6495ED;
+}
 a {
   text-decoration: none;
 }
@@ -24,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .title {
   font-family: 'Raleway', sans-serif;
   color: #4d5ae5;
@@ -44,7 +48,6 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--cornflower);
 }
 
 .header-container {
@@ -95,6 +98,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-img {
+  border-top: 1px solid var(--cornflower);
   background-color: #2e2f42;
   height: 600px;
 }
@@ -141,8 +145,9 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 24px;
   font-size: 16px;
   align-items: center;
-  gap: 24px;
+
 }
+
 .item {
   flex-direction: column;
   justify-content: space-between;
@@ -152,8 +157,8 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
-  width: 264px;
-  gap: 24px;
+  width: calc((100% - 3 * 24px) / 4);
+
 }
 .subject {
   width: 264px;
@@ -197,6 +202,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 264px;
   height: 380px;
   text-align: center;
+  margin-bottom: 120px;
 }
 .employees {
   width: 232px;
@@ -218,6 +224,23 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-top: 120px;
+  
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 24px;
+
+}
+
+.item-portfolio {
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 16px;
+  width: 360px;
 }
 .title-portfolio {
   font-weight: 500;
@@ -225,6 +248,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  
 }
 .subtitle-portfolio {
   font-size: 16px;
@@ -235,9 +259,31 @@ h1, h2, h3, h4, h5, h6, p {
 .footer {
   color: #f4f4fd;
   background-color: #2e2f42;
+  margin-top: 120px;
+}
+.title-footer {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  color: #4d5ae5;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  margin-right: 76px;
+  padding-top: 100px;
 }
 .text-footer {
-  letter-spacing: 0.02em;
+  margin-top: 16px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: var(--cloud);
+width: 264px;
+padding-bottom: 100px;
 }
 
 .studio-footer {

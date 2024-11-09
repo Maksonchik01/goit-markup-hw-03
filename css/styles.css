@@ -25,6 +25,17 @@ ol {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
+.visually-hidden {
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px;
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  white-space: nowrap; 
+  border: 0; 
+}
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -151,17 +162,7 @@ h1, h2, h3, h4, h5, h6, p {
 .section-items {
   padding: 120px 0;
 }
-.visually-hidden {
-  position: absolute; 
-  width: 1px; 
-  height: 1px; 
-  padding: 0; 
-  margin: -1px;
-  overflow: hidden; 
-  clip: rect(0, 0, 0, 0); 
-  white-space: nowrap; 
-  border: 0; 
-}
+ 
 
 .section-item {
   display: flex;
@@ -184,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 
 }
 .subject {

@@ -188,9 +188,7 @@ h1, h2, h3, h4, h5, h6, p {
   
 
 }
-.item-first {
-  width: calc((100% - 3 * 24px) / 4);
-}
+
 .item {
   flex-direction: column;
   justify-content: space-between;
@@ -200,7 +198,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
-
+  width: calc((100% - 3 * 24px) / 4);
 
 }
 .subject {

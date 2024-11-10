@@ -99,15 +99,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .contact-list {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
   align-items: center;
 }
 .contact-info {
+  display: block;
   color: #434455;
   font-style: normal;
   letter-spacing: 0.02em;
-
+  font-weight: 400;
+padding: 24px 0;
 }
 
 .contact-info:hover,
@@ -116,25 +117,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-img { 
-  display: flex;
   background-color: #2e2f42;
   padding: 188px 0;
 }
 .caption {
-  display: flex;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.02em;
   max-width: 496px;
   color: #ffffff;
-  padding: 188px 0; 
   margin: 0 auto;
   margin-top: 48px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .button-service {
   display: block;
@@ -146,7 +142,6 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.04em; 
   padding: 16px 32px;  
   margin: 0 auto;
-  margin-bottom: 188px;
   font-size: 16px;
   border-radius: 4px;
   min-width: 169px;
@@ -188,14 +183,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .item {
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: var(--slate);
   width: calc((100% - 3 * 24px) / 4);
 
 }
@@ -211,6 +198,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 .text {
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -227,26 +217,20 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .co-workers {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
+  width: calc((100% - 72px) / 4);
   text-align: center;
-  margin-bottom: 120px;
 }
 .employees {
-  width: 232px;
-  margin: 8px auto;
+
   padding: 32px 0;
 }
 
@@ -268,10 +252,10 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-top: 120px;
   margin-bottom: 72px;
   
 }
+
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -285,7 +269,9 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
-  width: 360px;
+}
+.list-item-portfolio {
+  width: calc((100% - 48px) / 3);
 }
 .title-portfolio {
   font-weight: 500;
@@ -305,7 +291,6 @@ h1, h2, h3, h4, h5, h6, p {
 .footer {
   color: #f4f4fd;
   background-color: #2e2f42;
-  margin-top: 120px;
   padding: 100px 0;
 }
 .title-footer {
@@ -317,13 +302,9 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 24px 0;
-  margin-right: 76px;
   margin-bottom: 16px;
-  padding-top: 100px;
 }
 .text-footer {
-  margin-top: 16px;
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 16px;
@@ -331,7 +312,6 @@ line-height: 150%;
 letter-spacing: 0.02em;
 color: var(--cloud);
 width: 264px;
-padding-bottom: 100px;
 }
 
 .studio-footer {
